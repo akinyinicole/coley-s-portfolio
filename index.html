@@ -43,35 +43,171 @@
     </svg>
   </div>
 
+  <!-- Scroll progress bar -->
+  <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
   <nav class="nav">
-    <a href="index.html" class="nav__brand">
+    <a href="#top" class="nav__brand">
       <span class="nav__mark">coley.</span>
     </a>
     <div class="nav__links">
-      <a href="about.html">about</a>
-      <a href="work.html">work</a>
-      <a href="skills.html">skills</a>
-      <a href="contact.html">say hi</a>
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">say hi</a>
     </div>
   </nav>
 
-  <main>
-    <section class="hero">
+  <main id="top">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="home">
       <div class="hero__container">
-        <div class="hero__text">
+        <div class="hero__text reveal">
           <p class="hero__eyebrow">SOFTWARE DEVELOPER, ZONE01 KISUMU</p>
           <h1 class="hero__name">
-            Hey, I'm <span class="hero__name-big">Coley</span> and I <span class="hero__love-word">love</span> coding
+            <span class="word"><span>Hey,</span></span>
+            <span class="word"><span>I'm</span></span>
+            <span class="word"><span class="hero__name-big">Coley</span></span>
+            <span class="word"><span>and</span></span>
+            <span class="word"><span>I</span></span>
+            <span class="word"><span class="hero__love-word">love</span></span>
+            <span class="word"><span>coding</span></span>
           </h1>
           <p class="hero__tagline">
-            I build web and mobile applications — from collaborative developer tools and pharmaceutical verification platforms to personal projects focused on skincare routines.
+            <span class="typed" id="typed"></span>
           </p>
-          <a href="work.html" class="hero__cta">see what I've made</a>
+          <a href="#work" class="hero__cta">see what I've made</a>
         </div>
-        <div class="hero__photo-wrap">
+        <div class="hero__photo-wrap reveal reveal--right">
           <img src="profile.jpg" alt="Coley" class="hero__photo">
         </div>
       </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="about" id="about">
+      <h2 class="section-title reveal">about</h2>
+      <div class="about__container">
+        <div class="about__text-wrap reveal">
+          <p class="about__text">
+            I'm a student at <strong>Zone01 Kisumu</strong>, working through a
+            curriculum of Go projects built in small collaborative teams. I
+            interned with the <strong>County Government of Kisumu's ICT
+            department</strong>, where I got a feel for building software that
+            real people depend on. Whether building hackathon platforms like
+            <strong>Dawa Trace</strong> or web apps like
+            <strong>Coley's Skin Lab</strong>, I enjoy creating impactful,
+            reliable software.
+          </p>
+        </div>
+        <div class="about__photo-wrap reveal reveal--right">
+          <img src="about-photo.jpg" alt="Coley photo" class="about__photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ WORK ============================ -->
+    <section class="work" id="work">
+      <h2 class="section-title reveal">things I've built</h2>
+
+      <article class="project reveal tilt">
+        <div class="project__text">
+          <span class="project__tag">hackathon project · Healthcare Tech</span>
+          <h3>Dawa Trace</h3>
+          <p>A verification platform engineered during a hackathon to validate the authenticity of pharmaceutical drugs before consumption, helping users combat counterfeit medication instantly.</p>
+        </div>
+        <div class="project__visual project__visual--dawa" aria-hidden="true"></div>
+      </article>
+
+      <article class="project project--reverse reveal tilt">
+        <div class="project__text">
+          <span class="project__tag">personal project · Skincare App</span>
+          <h3>Coley's Skin Lab</h3>
+          <p>A web application built to curate personalized skincare routines, track product ingredients, and offer custom recommendations based on skin type and concerns.</p>
+        </div>
+        <div class="project__visual project__visual--skincare" aria-hidden="true"></div>
+      </article>
+
+      <article class="project reveal tilt">
+        <div class="project__text">
+          <span class="project__tag">team project · Go</span>
+          <h3>Forum Web App</h3>
+          <p>A four-person collaborative forum built in Go, from schema design to deployment — my first real taste of building software as a team instead of solo.</p>
+        </div>
+        <div class="project__visual project__visual--rose" aria-hidden="true"></div>
+      </article>
+
+      <article class="project project--reverse reveal tilt">
+        <div class="project__text">
+          <span class="project__tag">solo · vanilla JS</span>
+          <h3>Sortable</h3>
+          <p>A data table of superheroes with pagination, search, and sort — no frameworks, just JavaScript doing what it's good at.</p>
+        </div>
+        <div class="project__visual project__visual--lavender" aria-hidden="true"></div>
+      </article>
+
+      <article class="project reveal tilt">
+        <div class="project__text">
+          <span class="project__tag">team project · React Native</span>
+          <h3>Wapi</h3>
+          <p>A mobile frontend built with Expo and React Native, developed alongside a team sharing one repo, one backlog, and a lot of merge conflicts.</p>
+        </div>
+        <div class="project__visual project__visual--coral" aria-hidden="true"></div>
+      </article>
+
+      <article class="project project--reverse reveal tilt">
+        <div class="project__text">
+          <span class="project__tag">hackathon · 48 hours</span>
+          <h3>KIVU</h3>
+          <p>A water-quality and aquaculture intelligence platform for Lake Victoria fish cage farmers, built against a two-day hackathon clock.</p>
+        </div>
+        <div class="project__visual project__visual--rose" aria-hidden="true"></div>
+      </article>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section class="skills" id="skills">
+      <h2 class="section-title reveal">what I work with</h2>
+
+      <ul class="skills__list reveal">
+        <li>Go</li>
+        <li>JavaScript</li>
+        <li>React Native</li>
+        <li>HTML &amp; CSS</li>
+        <li>Git &amp; Gitea</li>
+        <li>SQL</li>
+      </ul>
+
+      <div class="bars">
+        <div class="bar reveal">
+          <div class="bar__head"><span>Go</span><span>85%</span></div>
+          <div class="bar__track"><div class="bar__fill" data-level="85"></div></div>
+        </div>
+        <div class="bar reveal">
+          <div class="bar__head"><span>JavaScript</span><span>80%</span></div>
+          <div class="bar__track"><div class="bar__fill" data-level="80"></div></div>
+        </div>
+        <div class="bar reveal">
+          <div class="bar__head"><span>React Native</span><span>70%</span></div>
+          <div class="bar__track"><div class="bar__fill" data-level="70"></div></div>
+        </div>
+        <div class="bar reveal">
+          <div class="bar__head"><span>HTML &amp; CSS</span><span>90%</span></div>
+          <div class="bar__track"><div class="bar__fill" data-level="90"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="contact" id="contact">
+      <h2 class="section-title reveal">say hi</h2>
+      <p class="contact__text reveal">
+        Have a project in mind, or just want to talk about code? My inbox is open.
+      </p>
+      <a href="mailto:akinyinicole092@gmail.com" class="hero__cta reveal">akinyinicole092@gmail.com</a>
     </section>
   </main>
 
