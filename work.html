@@ -12,12 +12,23 @@
 <body>
 
   <div class="drift" aria-hidden="true">
-    <span class="shape shape--1"></span>
-    <span class="shape shape--2"></span>
+    <div class="shape shape--1"></div>
+    <div class="shape shape--2"></div>
+    <div class="shape shape--3"></div>
+    <div class="shape shape--4"></div>
+  </div>
+
+  <div class="dolls" aria-hidden="true">
+    <svg class="doll doll--1" viewBox="0 0 100 160"><ellipse cx="50" cy="25" rx="18" ry="18"/><path d="M 32 43 L 15 90 L 85 90 L 68 43 Z"/><path d="M 15 90 L 5 150 L 95 150 L 85 90 Z"/></svg>
+    <svg class="doll doll--2" viewBox="0 0 100 160"><ellipse cx="50" cy="25" rx="18" ry="18"/><path d="M 32 43 L 15 90 L 85 90 L 68 43 Z"/><path d="M 15 90 L 5 150 L 95 150 L 85 90 Z"/></svg>
+    <svg class="doll doll--3" viewBox="0 0 100 160"><ellipse cx="50" cy="25" rx="18" ry="18"/><path d="M 32 43 L 15 90 L 85 90 L 68 43 Z"/><path d="M 15 90 L 5 150 L 95 150 L 85 90 Z"/></svg>
+    <svg class="doll doll--4" viewBox="0 0 100 160"><ellipse cx="50" cy="25" rx="18" ry="18"/><path d="M 32 43 L 15 90 L 85 90 L 68 43 Z"/><path d="M 15 90 L 5 150 L 95 150 L 85 90 Z"/></svg>
   </div>
 
   <nav class="nav">
-    <a href="index.html" class="nav__mark">coley.</a>
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">coley.</span>
+    </a>
     <div class="nav__links">
       <a href="about.html">about</a>
       <a href="work.html" class="active">work</a>
@@ -30,8 +41,7 @@
     <section class="work">
       <h2 class="section-title">things I've built</h2>
 
-      <!-- Hackathon Project: Dawa Trace -->
-      <article class="project is-visible">
+      <article class="project">
         <div class="project__text">
           <span class="project__tag">hackathon project · Healthcare Tech</span>
           <h3>Dawa Trace</h3>
@@ -40,52 +50,47 @@
         <div class="project__visual project__visual--dawa" aria-hidden="true"></div>
       </article>
 
-      <!-- Personal Project: Coley's Skin Lab -->
-      <article class="project project--reverse is-visible">
+      <article class="project project--reverse">
         <div class="project__text">
           <span class="project__tag">personal project · Skincare App</span>
           <h3>Coley's Skin Lab</h3>
-          <p>A web application built to curate personalized skincare routines, track product ingredients, and offer custom recommendations based on skin type and concerns[cite: 2].</p>
+          <p>A web application built to curate personalized skincare routines, track product ingredients, and offer custom recommendations based on skin type and concerns.</p>
         </div>
         <div class="project__visual project__visual--skincare" aria-hidden="true"></div>
       </article>
 
-      <!-- Team Project: Forum -->
-      <article class="project is-visible">
+      <article class="project">
         <div class="project__text">
           <span class="project__tag">team project · Go</span>
           <h3>Forum Web App</h3>
-          <p>A four-person collaborative forum built in Go, from schema design to deployment — my first real taste of building software as a team instead of solo[cite: 2].</p>
+          <p>A four-person collaborative forum built in Go, from schema design to deployment — my first real taste of building software as a team instead of solo.</p>
         </div>
         <div class="project__visual project__visual--rose" aria-hidden="true"></div>
       </article>
 
-      <!-- Solo Project: Sortable -->
-      <article class="project project--reverse is-visible">
+      <article class="project project--reverse">
         <div class="project__text">
           <span class="project__tag">solo · vanilla JS</span>
           <h3>Sortable</h3>
-          <p>A data table of superheroes with pagination, search, and sort — no frameworks, just JavaScript doing what it's good at[cite: 2].</p>
+          <p>A data table of superheroes with pagination, search, and sort — no frameworks, just JavaScript doing what it's good at.</p>
         </div>
         <div class="project__visual project__visual--lavender" aria-hidden="true"></div>
       </article>
 
-      <!-- Team Project: Wapi -->
-      <article class="project is-visible">
+      <article class="project">
         <div class="project__text">
           <span class="project__tag">team project · React Native</span>
           <h3>Wapi</h3>
-          <p>A mobile frontend built with Expo and React Native, developed alongside a team sharing one repo, one backlog, and a lot of merge conflicts[cite: 2].</p>
+          <p>A mobile frontend built with Expo and React Native, developed alongside a team sharing one repo, one backlog, and a lot of merge conflicts.</p>
         </div>
         <div class="project__visual project__visual--coral" aria-hidden="true"></div>
       </article>
 
-      <!-- Hackathon Project: KIVU -->
-      <article class="project project--reverse is-visible">
+      <article class="project project--reverse">
         <div class="project__text">
           <span class="project__tag">hackathon · 48 hours</span>
           <h3>KIVU</h3>
-          <p>A water-quality and aquaculture intelligence platform for Lake Victoria fish cage farmers, built against a two-day hackathon clock[cite: 2].</p>
+          <p>A water-quality and aquaculture intelligence platform for Lake Victoria fish cage farmers, built against a two-day hackathon clock.</p>
         </div>
         <div class="project__visual project__visual--rose" aria-hidden="true"></div>
       </article>
@@ -96,5 +101,6 @@
     <p>Coley's Portfolio — built with care, one commit at a time.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

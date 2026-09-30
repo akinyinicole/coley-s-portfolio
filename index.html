@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coley's Portfolio</title>
+  <title>Coley — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,47 +11,42 @@
 </head>
 <body>
 
+  <!-- Floating Background Animations -->
   <div class="drift" aria-hidden="true">
-    <span class="shape shape--1"></span>
-    <span class="shape shape--2"></span>
-    <span class="shape shape--3"></span>
-    <span class="shape shape--4"></span>
+    <div class="shape shape--1"></div>
+    <div class="shape shape--2"></div>
+    <div class="shape shape--3"></div>
+    <div class="shape shape--4"></div>
   </div>
 
+  <!-- Floating SVG Dolls -->
   <div class="dolls" aria-hidden="true">
-    <svg class="doll doll--1" viewBox="0 0 60 100" xmlns="http://www.w3.org/2000/svg">
-      <circle class="doll__head" cx="30" cy="16" r="11"/>
-      <path class="doll__dress" d="M18,30 Q30,22 42,30 L48,78 Q30,92 12,78 Z"/>
-      <circle class="doll__foot" cx="21" cy="90" r="4"/>
-      <circle class="doll__foot" cx="39" cy="90" r="4"/>
+    <svg class="doll doll--1" viewBox="0 0 100 160">
+      <ellipse cx="50" cy="25" rx="18" ry="18" />
+      <path d="M 32 43 L 15 90 L 85 90 L 68 43 Z" />
+      <path d="M 15 90 L 5 150 L 95 150 L 85 90 Z" />
     </svg>
-
-    <svg class="doll doll--2" viewBox="0 0 60 100" xmlns="http://www.w3.org/2000/svg">
-      <circle class="doll__head" cx="30" cy="16" r="11"/>
-      <path class="doll__dress" d="M18,30 Q30,22 42,30 L48,78 Q30,92 12,78 Z"/>
-      <circle class="doll__foot" cx="21" cy="90" r="4"/>
-      <circle class="doll__foot" cx="39" cy="90" r="4"/>
+    <svg class="doll doll--2" viewBox="0 0 100 160">
+      <ellipse cx="50" cy="25" rx="18" ry="18" />
+      <path d="M 32 43 L 15 90 L 85 90 L 68 43 Z" />
+      <path d="M 15 90 L 5 150 L 95 150 L 85 90 Z" />
     </svg>
-
-    <svg class="doll doll--3" viewBox="0 0 60 100" xmlns="http://www.w3.org/2000/svg">
-      <circle class="doll__head" cx="30" cy="16" r="11"/>
-      <path class="doll__dress" d="M18,30 Q30,22 42,30 L48,78 Q30,92 12,78 Z"/>
-      <circle class="doll__foot" cx="21" cy="90" r="4"/>
-      <circle class="doll__foot" cx="39" cy="90" r="4"/>
+    <svg class="doll doll--3" viewBox="0 0 100 160">
+      <ellipse cx="50" cy="25" rx="18" ry="18" />
+      <path d="M 32 43 L 15 90 L 85 90 L 68 43 Z" />
+      <path d="M 15 90 L 5 150 L 95 150 L 85 90 Z" />
     </svg>
-
-    <svg class="doll doll--4" viewBox="0 0 60 100" xmlns="http://www.w3.org/2000/svg">
-      <circle class="doll__head" cx="30" cy="16" r="11"/>
-      <path class="doll__dress" d="M18,30 Q30,22 42,30 L48,78 Q30,92 12,78 Z"/>
-      <circle class="doll__foot" cx="21" cy="90" r="4"/>
-      <circle class="doll__foot" cx="39" cy="90" r="4"/>
+    <svg class="doll doll--4" viewBox="0 0 100 160">
+      <ellipse cx="50" cy="25" rx="18" ry="18" />
+      <path d="M 32 43 L 15 90 L 85 90 L 68 43 Z" />
+      <path d="M 15 90 L 5 150 L 95 150 L 85 90 Z" />
     </svg>
   </div>
-
-  <div class="glitter" aria-hidden="true"></div>
 
   <nav class="nav">
-    <a href="index.html" class="nav__mark">coley.</a>
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">coley.</span>
+    </a>
     <div class="nav__links">
       <a href="about.html">about</a>
       <a href="work.html">work</a>
@@ -60,32 +55,30 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero__container">
-      <div class="hero__text">
-        <p class="hero__eyebrow">software developer, zone01 kisumu</p>
-        <h1 class="hero__name" id="hero-name">
-          Hey, I'm <span class="hero__name-big">Coley</span> and I <span class="hero__love-word">love coding</span>
-        </h1>
-        <p class="hero__tagline">
-          I build web and mobile applications — from collaborative developer tools and pharmaceutical verification platforms to personal projects focused on skincare routines.
-        </p>
-        <a href="work.html" class="hero__cta">see what I've made</a>
+  <main>
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__text">
+          <p class="hero__eyebrow">SOFTWARE DEVELOPER, ZONE01 KISUMU</p>
+          <h1 class="hero__name">
+            Hey, I'm <span class="hero__name-big">Coley</span> and I <span class="hero__love-word">love</span> coding
+          </h1>
+          <p class="hero__tagline">
+            I build web and mobile applications — from collaborative developer tools and pharmaceutical verification platforms to personal projects focused on skincare routines.
+          </p>
+          <a href="work.html" class="hero__cta">see what I've made</a>
+        </div>
+        <div class="hero__photo-wrap">
+          <img src="profile.jpg" alt="Coley" class="hero__photo">
+        </div>
       </div>
-      <div class="hero__photo-wrap">
-        <img src="profile.jpg" alt="Coley" class="hero__photo">
-      </div>
-    </div>
-  </header>
-
-  <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,50 L1440,100 L0,100 Z"></path>
-  </svg>
+    </section>
+  </main>
 
   <footer class="footer">
     <p>Coley's Portfolio — built with care, one commit at a time.</p>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
